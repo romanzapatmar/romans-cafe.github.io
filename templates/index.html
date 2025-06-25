@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}Roman's Cafe{% endblock title %} 
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/img/cafeImg1.jpg" class="d-block w-100" alt="..." style="height:500px; object-fit:cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Cafeteria</h5>
+                    <p>Enjoy our selection of premium blends and single origins.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/cafeImg2.avif" class="d-block w-100" alt="..." style="height:500px; object-fit:cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Enjoy your coffee</h5>
+                    <p>Enjoy our selection of premium blends and single origins.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/cafeImg3.avif" class="d-block w-100" alt="..." style="height:500px; object-fit:cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Enjoy with your loved once</h5>
+                    <p>Enjoy our selection of premium blends and single origins.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<section class="py-5 bg-light">
+    <h3 class="text-center">Welcome to Roman's Cafe</h3>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/cafeImg1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Album 1" style="object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Best Cafeteria</h5>
+            <p class="card-text">This is a short description for the first album item. You can add any text here.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/cafeImg2.avif" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Album 2" style="object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Wide Space</h5>
+            <p class="card-text">Another description for the second album item. You can customize this as needed.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">12 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/cafeImg3.avif" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Album 3" style="object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Personal Space</h5>
+            <p class="card-text">A third description for your album. Add more cards as needed for your content.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-muted">5 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here as needed -->
+    </div>
+  </div>
+</section>
+{% endblock body %}
